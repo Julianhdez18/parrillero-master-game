@@ -52,6 +52,40 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				
+				// BBQ Game Colors
+				fire: {
+					DEFAULT: 'hsl(var(--fire))',
+					light: 'hsl(var(--fire-light))'
+				},
+				grill: {
+					DEFAULT: 'hsl(var(--grill))',
+					light: 'hsl(var(--grill-light))'
+				},
+				meat: {
+					DEFAULT: 'hsl(var(--meat))',
+					cooked: 'hsl(var(--meat-cooked))'
+				},
+				beer: {
+					DEFAULT: 'hsl(var(--beer))',
+					foam: 'hsl(var(--beer-foam))'
+				},
+				vegetables: 'hsl(var(--vegetables))',
+				cheese: 'hsl(var(--cheese))',
+				
+				// Mood Colors
+				happy: 'hsl(var(--happy))',
+				angry: 'hsl(var(--angry))',
+				hungry: 'hsl(var(--hungry))',
+				
+				// Game Backgrounds
+				'game-bg': 'hsl(var(--game-bg))',
+				'game-bg-light': 'hsl(var(--game-bg-light))',
+				
+				success: 'hsl(var(--success))',
+				warning: 'hsl(var(--warning))',
+				info: 'hsl(var(--info))',
+				
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +96,21 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-fire': 'var(--gradient-fire)',
+				'gradient-meat': 'var(--gradient-meat)',
+				'gradient-night': 'var(--gradient-night)',
+				'gradient-beer': 'var(--gradient-beer)'
+			},
+			boxShadow: {
+				'fire': 'var(--shadow-fire)',
+				'glow': 'var(--shadow-glow)',
+				'depth': 'var(--shadow-depth)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +133,48 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				
+				// BBQ Game Animations
+				'sizzle': {
+					'0%, 100%': { transform: 'translateX(0)' },
+					'25%': { transform: 'translateX(-1px)' },
+					'75%': { transform: 'translateX(1px)' }
+				},
+				'flame-dance': {
+					'0%, 100%': { transform: 'scale(1) rotate(0deg)', opacity: '0.8' },
+					'50%': { transform: 'scale(1.1) rotate(2deg)', opacity: '1' }
+				},
+				'bounce-in': {
+					'0%': { transform: 'scale(0)', opacity: '0' },
+					'50%': { transform: 'scale(1.1)', opacity: '1' },
+					'100%': { transform: 'scale(1)', opacity: '1' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-8px)' }
+				},
+				'shake': {
+					'0%, 100%': { transform: 'translateX(0)' },
+					'10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-2px)' },
+					'20%, 40%, 60%, 80%': { transform: 'translateX(2px)' }
+				},
+				'glow-pulse': {
+					'0%, 100%': { boxShadow: '0 0 20px hsl(45, 85%, 65%, 0.3)' },
+					'50%': { boxShadow: '0 0 30px hsl(45, 85%, 65%, 0.6)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				
+				// BBQ Game Animations
+				'sizzle': 'sizzle 0.3s ease-in-out infinite',
+				'flame-dance': 'flame-dance 1.5s ease-in-out infinite',
+				'bounce-in': 'bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+				'float': 'float 3s ease-in-out infinite',
+				'shake': 'shake 0.5s ease-in-out',
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite'
 			}
 		}
 	},

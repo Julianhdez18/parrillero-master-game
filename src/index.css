@@ -8,35 +8,81 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* BBQ Game Design System - Mexican Grill Vibes */
+    --background: 20 15% 95%;
+    --foreground: 25 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 30 25% 98%;
+    --card-foreground: 25 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 30 25% 98%;
+    --popover-foreground: 25 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Fire & Grill Colors */
+    --primary: 15 85% 55%;        /* Deep BBQ Orange */
+    --primary-foreground: 30 25% 98%;
+    
+    --fire: 10 90% 60%;           /* Flame Red */
+    --fire-light: 20 85% 70%;     /* Light Fire Orange */
+    
+    --grill: 25 15% 25%;          /* Dark Grill Metal */
+    --grill-light: 25 20% 40%;    /* Light Grill */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Food Colors */
+    --meat: 15 45% 35%;           /* Rich Meat Brown */
+    --meat-cooked: 20 55% 45%;    /* Grilled Meat */
+    
+    --beer: 45 85% 65%;           /* Golden Beer */
+    --beer-foam: 45 25% 95%;      /* White Foam */
+    
+    --vegetables: 120 50% 45%;    /* Fresh Green */
+    --cheese: 50 80% 75%;         /* Cheese Yellow */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Mood Colors */
+    --happy: 120 60% 50%;         /* Happy Green */
+    --angry: 0 75% 55%;           /* Angry Red */
+    --hungry: 35 80% 60%;         /* Hungry Orange */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --secondary: 25 20% 90%;
+    --secondary-foreground: 25 25% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --muted: 25 15% 88%;
+    --muted-foreground: 25 15% 45%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --accent: 45 85% 65%;         /* Golden Accent */
+    --accent-foreground: 25 25% 15%;
 
-    --radius: 0.5rem;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 30 25% 98%;
+
+    --border: 25 15% 85%;
+    --input: 25 15% 85%;
+    --ring: 15 85% 55%;
+
+    /* Game Specific */
+    --game-bg: 220 25% 15%;       /* Night Sky */
+    --game-bg-light: 220 20% 25%; /* Lighter Night */
+    
+    --success: 120 60% 50%;
+    --warning: 35 80% 60%;
+    --info: 200 80% 60%;
+
+    /* Gradients */
+    --gradient-fire: linear-gradient(135deg, hsl(10, 90%, 60%), hsl(20, 85%, 70%));
+    --gradient-meat: linear-gradient(135deg, hsl(15, 45%, 35%), hsl(20, 55%, 45%));
+    --gradient-night: linear-gradient(180deg, hsl(220, 25%, 15%), hsl(220, 20%, 25%));
+    --gradient-beer: linear-gradient(180deg, hsl(45, 25%, 95%), hsl(45, 85%, 65%));
+
+    /* Shadows & Effects */
+    --shadow-fire: 0 8px 32px hsl(15, 85%, 55%, 0.4);
+    --shadow-glow: 0 0 20px hsl(45, 85%, 65%, 0.3);
+    --shadow-depth: 0 8px 25px hsl(25, 25%, 15%, 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
