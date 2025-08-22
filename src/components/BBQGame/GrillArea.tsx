@@ -8,12 +8,12 @@ interface GrillAreaProps {
 
 export const GrillArea = ({ selectedMeat, selectedSides, hasBeer }: GrillAreaProps) => {
   return (
-    <div className="bg-card/90 backdrop-blur-sm rounded-lg p-6 border border-fire/20">
+    <div className="bg-gradient-premium/5 backdrop-blur-sm rounded-lg p-6 border border-secondary/30 shadow-premium">
       
       {/* Grill Header */}
       <div className="flex items-center gap-3 mb-6">
-        <span className="text-3xl animate-flame-dance">🔥</span>
-        <h3 className="text-xl font-semibold text-fire">Parrilla Encendida</h3>
+        <span className="text-4xl animate-flame-dance">🔥</span>
+        <h3 className="text-2xl font-playfair font-bold text-primary">Parrilla Premium Encendida</h3>
         <span className="text-3xl animate-flame-dance" style={{ animationDelay: '0.5s' }}>🔥</span>
       </div>
 

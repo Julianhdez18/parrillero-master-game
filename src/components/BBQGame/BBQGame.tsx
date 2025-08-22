@@ -77,11 +77,12 @@ const BBQGame = () => {
 
   return (
     <div className="min-h-screen bg-gradient-night relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-fire rounded-full blur-xl animate-float"></div>
-        <div className="absolute bottom-20 right-20 w-24 h-24 bg-beer rounded-full blur-lg animate-float" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-vegetables rounded-full blur-md animate-float" style={{ animationDelay: '2s' }}></div>
+      {/* Premium background decorative elements */}
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute top-10 left-10 w-32 h-32 bg-fire rounded-full blur-xl animate-float shadow-fire"></div>
+        <div className="absolute bottom-20 right-20 w-24 h-24 bg-secondary rounded-full blur-lg animate-float shadow-glow" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-meat rounded-full blur-md animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-20 right-1/3 w-20 h-20 bg-primary rounded-full blur-lg animate-float shadow-premium" style={{ animationDelay: '3s' }}></div>
       </div>
 
       {gameState === "start" && <GameStart onStart={startGame} />}

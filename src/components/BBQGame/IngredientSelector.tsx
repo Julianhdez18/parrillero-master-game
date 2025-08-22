@@ -12,16 +12,20 @@ interface IngredientSelectorProps {
 
 const MEAT_TYPES = [
   { name: "Rib Eye", emoji: "🥩", description: "Premium corte" },
-  { name: "Arrachera", emoji: "🍖", description: "Tradicional" },
+  { name: "Arrachera", emoji: "🍖", description: "Tradicional mexicano" },
   { name: "Costilla", emoji: "🍗", description: "Jugosa" },
-  { name: "T-Bone", emoji: "🥩", description: "Clásico" }
+  { name: "T-Bone", emoji: "🥩", description: "Clásico americano" },
+  { name: "New York", emoji: "🥩", description: "Suave y tierno" },
+  { name: "Tomahawk", emoji: "🥩", description: "Espectacular" }
 ];
 
 const SIDES = [
-  { name: "Cebollitas", emoji: "🧅", description: "Asadas" },
-  { name: "Nopales", emoji: "🌵", description: "Frescos" },
-  { name: "Queso", emoji: "🧀", description: "Derretido" },
-  { name: "Salchicha", emoji: "🌭", description: "Extra" }
+  { name: "Cebollitas", emoji: "🧅", description: "Asadas perfectas" },
+  { name: "Nopales", emoji: "🌵", description: "Frescos mexicanos" },
+  { name: "Queso", emoji: "🧀", description: "Derretido cremoso" },
+  { name: "Chorizo", emoji: "🌭", description: "Artesanal picante" },
+  { name: "Guacamole", emoji: "🥑", description: "Fresco casero" },
+  { name: "Frijoles", emoji: "🫘", description: "Charros tradicionales" }
 ];
 
 export const IngredientSelector = ({ 
@@ -48,11 +52,11 @@ export const IngredientSelector = ({
   };
 
   return (
-    <div className="bg-card/90 backdrop-blur-sm rounded-lg p-6 border border-fire/20">
+    <div className="bg-gradient-premium/5 backdrop-blur-sm rounded-lg p-6 border border-secondary/30 shadow-premium">
       
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
-        <h3 className="text-xl font-semibold text-foreground">Selecciona Ingredientes</h3>
+        <h3 className="text-2xl font-playfair font-bold text-primary">Selecciona Ingredientes Premium</h3>
         {(selectedMeat || selectedSides.length > 0 || hasBeer) && (
           <Button 
             onClick={clearSelection}
@@ -91,8 +95,8 @@ export const IngredientSelector = ({
 
       {/* Meat Selection */}
       <div className="mb-6">
-        <h4 className="text-lg font-semibold text-meat mb-3">Cortes Premium</h4>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <h4 className="text-xl font-playfair font-bold text-primary mb-4">Cortes Premium Dr. Cortes</h4>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {MEAT_TYPES.map(meat => (
             <Button
               key={meat.name}
@@ -116,8 +120,8 @@ export const IngredientSelector = ({
 
       {/* Sides Selection */}
       <div className="mb-6">
-        <h4 className="text-lg font-semibold text-vegetables mb-3">Complementos</h4>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <h4 className="text-xl font-playfair font-bold text-vegetables mb-4">Complementos Mexicanos</h4>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {SIDES.map(side => (
             <Button
               key={side.name}
@@ -141,7 +145,7 @@ export const IngredientSelector = ({
 
       {/* Beer Selection */}
       <div>
-        <h4 className="text-lg font-semibold text-beer mb-3">Bebida</h4>
+        <h4 className="text-xl font-playfair font-bold text-secondary mb-4">Cerveza Premium</h4>
         <Button
           onClick={() => setHasBeer(!hasBeer)}
           variant={hasBeer ? "default" : "outline"}

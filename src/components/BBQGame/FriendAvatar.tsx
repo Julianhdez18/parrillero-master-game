@@ -37,10 +37,10 @@ export const FriendAvatar = ({ friend, onServe, canServe }: FriendAvatarProps) =
   };
 
   return (
-    <div className={`bg-card border rounded-lg p-4 transition-all duration-300 ${
+    <div className={`bg-gradient-premium/5 border rounded-lg p-4 transition-all duration-300 shadow-premium ${
       friend.mood === "angry" ? "border-angry animate-shake" : 
       friend.mood === "happy" ? "border-happy" : 
-      "border-hungry hover:border-fire"
+      "border-primary hover:border-secondary"
     }`}>
       
       {/* Friend Info */}

@@ -18,6 +18,11 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'crimson': ['Crimson Text', 'serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -101,12 +106,14 @@ export default {
 				'gradient-fire': 'var(--gradient-fire)',
 				'gradient-meat': 'var(--gradient-meat)',
 				'gradient-night': 'var(--gradient-night)',
-				'gradient-beer': 'var(--gradient-beer)'
+				'gradient-beer': 'var(--gradient-beer)',
+				'gradient-premium': 'var(--gradient-premium)'
 			},
 			boxShadow: {
 				'fire': 'var(--shadow-fire)',
 				'glow': 'var(--shadow-glow)',
-				'depth': 'var(--shadow-depth)'
+				'depth': 'var(--shadow-depth)',
+				'premium': 'var(--shadow-premium)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',

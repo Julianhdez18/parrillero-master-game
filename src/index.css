@@ -8,75 +8,77 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* BBQ Game Design System - Mexican Grill Vibes */
-    --background: 20 15% 95%;
-    --foreground: 25 25% 15%;
+    /* Dr. Cortes Premium Design System */
+    --background: 35 20% 97%;
+    --foreground: 0 15% 15%;
 
-    --card: 30 25% 98%;
-    --card-foreground: 25 25% 15%;
+    --card: 35 25% 98%;
+    --card-foreground: 0 15% 15%;
 
-    --popover: 30 25% 98%;
-    --popover-foreground: 25 25% 15%;
+    --popover: 35 25% 98%;
+    --popover-foreground: 0 15% 15%;
 
-    /* Fire & Grill Colors */
-    --primary: 15 85% 55%;        /* Deep BBQ Orange */
-    --primary-foreground: 30 25% 98%;
+    /* Dr. Cortes Brand Colors */
+    --primary: 0 65% 35%;         /* Deep Burgundy Red */
+    --primary-foreground: 35 25% 98%;
     
-    --fire: 10 90% 60%;           /* Flame Red */
-    --fire-light: 20 85% 70%;     /* Light Fire Orange */
+    --fire: 0 75% 45%;            /* Premium Red Fire */
+    --fire-light: 15 65% 55%;     /* Warm Red Glow */
     
-    --grill: 25 15% 25%;          /* Dark Grill Metal */
-    --grill-light: 25 20% 40%;    /* Light Grill */
+    --grill: 0 5% 20%;            /* Elegant Dark */
+    --grill-light: 0 8% 35%;      /* Refined Metal */
 
-    /* Food Colors */
+    /* Premium Food Colors */
     --meat: 15 45% 35%;           /* Rich Meat Brown */
-    --meat-cooked: 20 55% 45%;    /* Grilled Meat */
+    --meat-cooked: 20 55% 45%;    /* Perfect Grill */
     
-    --beer: 45 85% 65%;           /* Golden Beer */
-    --beer-foam: 45 25% 95%;      /* White Foam */
+    --beer: 45 85% 55%;           /* Golden Premium */
+    --beer-foam: 45 25% 95%;      /* Creamy Foam */
     
-    --vegetables: 120 50% 45%;    /* Fresh Green */
-    --cheese: 50 80% 75%;         /* Cheese Yellow */
+    --vegetables: 120 40% 45%;    /* Fresh Mexican Green */
+    --cheese: 50 75% 70%;         /* Mexican Cheese */
 
     /* Mood Colors */
-    --happy: 120 60% 50%;         /* Happy Green */
-    --angry: 0 75% 55%;           /* Angry Red */
-    --hungry: 35 80% 60%;         /* Hungry Orange */
+    --happy: 120 55% 45%;         /* Satisfied Green */
+    --angry: 0 70% 50%;           /* Frustrated Red */
+    --hungry: 35 75% 55%;         /* Anticipation Orange */
 
-    --secondary: 25 20% 90%;
-    --secondary-foreground: 25 25% 15%;
+    --secondary: 45 85% 55%;      /* Elegant Gold */
+    --secondary-foreground: 0 15% 15%;
 
-    --muted: 25 15% 88%;
-    --muted-foreground: 25 15% 45%;
+    --muted: 0 8% 88%;
+    --muted-foreground: 0 8% 45%;
 
-    --accent: 45 85% 65%;         /* Golden Accent */
-    --accent-foreground: 25 25% 15%;
+    --accent: 45 85% 55%;         /* Dr. Cortes Gold */
+    --accent-foreground: 0 15% 15%;
 
-    --destructive: 0 75% 55%;
-    --destructive-foreground: 30 25% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 35 25% 98%;
 
-    --border: 25 15% 85%;
-    --input: 25 15% 85%;
-    --ring: 15 85% 55%;
+    --border: 0 8% 85%;
+    --input: 0 8% 85%;
+    --ring: 0 65% 35%;
 
-    /* Game Specific */
-    --game-bg: 220 25% 15%;       /* Night Sky */
-    --game-bg-light: 220 20% 25%; /* Lighter Night */
+    /* Game Backgrounds */
+    --game-bg: 0 15% 8%;          /* Rich Dark */
+    --game-bg-light: 0 12% 15%;   /* Sophisticated Dark */
     
-    --success: 120 60% 50%;
-    --warning: 35 80% 60%;
-    --info: 200 80% 60%;
+    --success: 120 55% 45%;
+    --warning: 35 75% 55%;
+    --info: 200 75% 55%;
 
-    /* Gradients */
-    --gradient-fire: linear-gradient(135deg, hsl(10, 90%, 60%), hsl(20, 85%, 70%));
+    /* Premium Gradients */
+    --gradient-fire: linear-gradient(135deg, hsl(0, 75%, 45%), hsl(15, 65%, 55%));
     --gradient-meat: linear-gradient(135deg, hsl(15, 45%, 35%), hsl(20, 55%, 45%));
-    --gradient-night: linear-gradient(180deg, hsl(220, 25%, 15%), hsl(220, 20%, 25%));
-    --gradient-beer: linear-gradient(180deg, hsl(45, 25%, 95%), hsl(45, 85%, 65%));
+    --gradient-night: linear-gradient(180deg, hsl(0, 15%, 8%), hsl(0, 12%, 15%));
+    --gradient-beer: linear-gradient(180deg, hsl(45, 25%, 95%), hsl(45, 85%, 55%));
+    --gradient-premium: linear-gradient(135deg, hsl(0, 65%, 35%), hsl(45, 85%, 55%));
 
-    /* Shadows & Effects */
-    --shadow-fire: 0 8px 32px hsl(15, 85%, 55%, 0.4);
-    --shadow-glow: 0 0 20px hsl(45, 85%, 65%, 0.3);
-    --shadow-depth: 0 8px 25px hsl(25, 25%, 15%, 0.15);
+    /* Elegant Shadows */
+    --shadow-fire: 0 8px 32px hsl(0, 75%, 45%, 0.3);
+    --shadow-glow: 0 0 20px hsl(45, 85%, 55%, 0.25);
+    --shadow-depth: 0 8px 25px hsl(0, 15%, 8%, 0.15);
+    --shadow-premium: 0 4px 20px hsl(0, 65%, 35%, 0.2);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

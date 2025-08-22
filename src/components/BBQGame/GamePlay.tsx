@@ -13,9 +13,9 @@ interface GamePlayProps {
   setScore: (score: number) => void;
 }
 
-const MEAT_TYPES = ["Rib Eye", "Arrachera", "Costilla", "T-Bone"];
-const SIDES = ["Cebollitas", "Nopales", "Queso", "Salchicha"];
-const FRIEND_NAMES = ["Carlos", "María", "Luis", "Ana", "Pedro", "Sofia"];
+const MEAT_TYPES = ["Rib Eye", "Arrachera", "Costilla", "T-Bone", "New York", "Tomahawk"];
+const SIDES = ["Cebollitas", "Nopales", "Queso", "Chorizo", "Guacamole", "Frijoles"];
+const FRIEND_NAMES = ["Carlos", "María", "Luis", "Ana", "Pedro", "Sofia", "Miguel", "Carmen", "José", "Lucía"];
 
 const GAME_DURATION = 300; // 5 minutes in seconds
 
@@ -167,20 +167,20 @@ export const GamePlay = ({ onGameEnd, score, setScore }: GamePlayProps) => {
     <div className="min-h-screen p-4">
       {/* Game Header */}
       <div className="max-w-6xl mx-auto mb-6">
-        <div className="flex flex-wrap items-center justify-between bg-card/90 backdrop-blur-sm rounded-lg p-4 border border-fire/20">
+        <div className="flex flex-wrap items-center justify-between bg-gradient-premium/10 backdrop-blur-sm rounded-lg p-4 border border-secondary/30 shadow-premium">
           <div className="flex items-center gap-4">
-            <Badge variant="secondary" className="text-lg px-3 py-1">
+            <Badge className="bg-primary text-white font-playfair text-lg px-4 py-2">
               Tiempo: {formatTime(gameTime)}
             </Badge>
-            <Badge className="bg-primary text-lg px-3 py-1">
+            <Badge className="bg-secondary text-white font-playfair text-lg px-4 py-2">
               Puntos: {score}
             </Badge>
           </div>
           
-          <div className="flex gap-4 text-sm">
-            <span className="text-happy">😊 {happyFriends}</span>
-            <span className="text-primary">🏆 {perfectCombos}</span>
-            <span className="text-angry">😠 {angryFriends}</span>
+          <div className="flex gap-4 text-sm font-inter">
+            <span className="text-happy font-semibold">😊 {happyFriends}</span>
+            <span className="text-secondary font-semibold">🏆 {perfectCombos}</span>
+            <span className="text-angry font-semibold">😠 {angryFriends}</span>
           </div>
         </div>
       </div>
@@ -189,8 +189,8 @@ export const GamePlay = ({ onGameEnd, score, setScore }: GamePlayProps) => {
         
         {/* Friends Panel */}
         <div className="lg:col-span-1">
-          <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 border border-fire/20">
-            <h3 className="text-lg font-semibold mb-4 text-hungry">Amigos Hambrientos</h3>
+          <div className="bg-gradient-premium/5 backdrop-blur-sm rounded-lg p-4 border border-secondary/30 shadow-premium">
+            <h3 className="text-xl font-playfair font-bold mb-4 text-primary">Amigos Hambrientos</h3>
             <div className="space-y-4">
               {friends.map(friend => (
                 <FriendAvatar 
