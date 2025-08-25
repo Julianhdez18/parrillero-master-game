@@ -38,6 +38,7 @@ const BBQGame = () => {
   const { toast } = useToast();
 
   const startGame = () => {
+    console.log("startGame called, changing state to playing");
     setGameState("playing");
     setScore(0);
     setGameStats({
