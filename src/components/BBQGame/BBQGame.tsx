@@ -40,6 +40,7 @@ const BBQGame = () => {
   const startGame = () => {
     console.log("startGame called, changing state to playing");
     setGameState("playing");
+    console.log("Game state changed to:", "playing");
     setScore(0);
     setGameStats({
       score: 0,
@@ -88,11 +89,14 @@ const BBQGame = () => {
 
       {gameState === "start" && <GameStart onStart={startGame} />}
       {gameState === "playing" && (
-        <GamePlay 
-          onGameEnd={endGame}
-          score={score}
-          setScore={setScore}
-        />
+        <div>
+          <p>DEBUG: GamePlay should render here. Current gameState: {gameState}</p>
+          <GamePlay 
+            onGameEnd={endGame}
+            score={score}
+            setScore={setScore}
+          />
+        </div>
       )}
       {gameState === "end" && (
         <GameEnd 

@@ -68,10 +68,7 @@ export const GameStart = ({ onStart }: GameStartProps) => {
         {/* Start Button */}
         <div className="animate-bounce-in" style={{ animationDelay: '0.8s' }}>
           <Button 
-            onClick={() => {
-              console.log("Button clicked!"); 
-              onStart();
-            }}
+            onClick={onStart}
             size="lg"
             className="bg-gradient-premium text-white font-playfair font-bold text-xl px-10 py-4 shadow-premium hover:scale-105 transition-transform border border-secondary/50"
           >
