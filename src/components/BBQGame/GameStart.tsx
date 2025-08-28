@@ -69,8 +69,9 @@ export const GameStart = ({ onStart }: GameStartProps) => {
         <div className="animate-bounce-in" style={{ animationDelay: '0.8s' }}>
           <Button 
             onClick={onStart}
+            variant="premium"
             size="lg"
-            className="bg-gradient-premium text-white font-playfair font-bold text-xl px-10 py-4 shadow-premium hover:scale-105 transition-transform border border-secondary/50"
+            className="font-playfair font-bold text-xl px-10 py-4 border border-secondary/50 hover:shadow-glow active:scale-95 transition-all duration-200"
           >
             ¡Empezar a Asar! 🔥
           </Button>
