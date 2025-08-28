@@ -66,12 +66,16 @@ export const GameStart = ({ onStart }: GameStartProps) => {
         </div>
 
         {/* Start Button */}
-        <div className="animate-bounce-in" style={{ animationDelay: '0.8s' }}>
+        <div className="relative z-50 pt-4">
           <Button 
-            onClick={onStart}
+            onClick={(e) => {
+              console.log('Button clicked!', e);
+              onStart();
+            }}
             variant="premium"
             size="lg"
-            className="font-playfair font-bold text-xl px-10 py-4 border border-secondary/50 hover:shadow-glow active:scale-95 transition-all duration-200"
+            className="font-playfair font-bold text-xl px-10 py-4 border border-secondary/50 hover:shadow-glow transition-all duration-200 relative z-10 cursor-pointer"
+            style={{ pointerEvents: 'auto' }}
           >
             ¡Empezar a Asar! 🔥
           </Button>
